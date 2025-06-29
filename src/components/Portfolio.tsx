@@ -43,13 +43,13 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="section-padding">
+    <section id="portfolio" className="section-padding bg-background">
       <div className="container-max">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Portfolio
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Showcasing our latest projects and successful client collaborations
           </p>
         </div>
@@ -58,7 +58,8 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in border border-border/50"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
                 <img
@@ -79,11 +80,11 @@ const Portfolio = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-card-foreground mb-2">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4">
+                <p className="text-muted-foreground mb-4">
                   {project.description}
                 </p>
                 

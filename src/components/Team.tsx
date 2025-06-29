@@ -19,13 +19,13 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="section-padding">
+    <section id="team" className="section-padding bg-muted/30">
       <div className="container-max">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Team
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Meet the passionate individuals behind TechStudio's success
           </p>
         </div>
@@ -34,7 +34,8 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="bg-card rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-border/50"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative">
                 <img
@@ -46,7 +47,7 @@ const Team = () => {
               </div>
               
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                <h3 className="text-2xl font-bold text-card-foreground mb-2">
                   {member.name}
                 </h3>
                 
@@ -61,18 +62,18 @@ const Team = () => {
                   ))}
                 </div>
                 
-                <p className="text-gray-600 mb-6">
+                <p className="text-muted-foreground mb-6">
                   {member.bio}
                 </p>
                 
                 <div className="flex space-x-4">
-                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all">
+                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110">
                     <Linkedin className="w-5 h-5" />
                   </button>
-                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all">
+                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110">
                     <Twitter className="w-5 h-5" />
                   </button>
-                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all">
+                  <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110">
                     <Mail className="w-5 h-5" />
                   </button>
                 </div>

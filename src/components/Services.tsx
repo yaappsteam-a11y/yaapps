@@ -32,13 +32,13 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="section-padding bg-gray-50">
+    <section id="services" className="section-padding bg-muted/30">
       <div className="container-max">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             We offer comprehensive digital solutions to help your business thrive in the modern world
           </p>
         </div>
@@ -47,17 +47,18 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group animate-fade-in border border-border/50"
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                 <service.icon className="w-8 h-8 text-primary group-hover:text-white" />
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-card-foreground mb-3">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {service.description}
               </p>
             </div>
