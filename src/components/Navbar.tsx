@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container-max">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 animate-fade-in">
-            <h1 className="text-2xl font-bold text-primary">TechStudio</h1>
+            <h1 className="text-2xl font-bold text-primary">Yaapps</h1>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

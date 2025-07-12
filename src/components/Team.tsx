@@ -26,7 +26,7 @@ const Team = () => {
             Our Team
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Meet the passionate individuals behind TechStudio's success
+            Meet the passionate individuals behind Yaapps's success
           </p>
         </div>
         

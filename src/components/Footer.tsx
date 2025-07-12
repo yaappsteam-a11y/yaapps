@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="animate-fade-in">
-            <h3 className="text-2xl font-bold text-primary mb-4">TechStudio</h3>
+            <h3 className="text-2xl font-bold text-primary mb-4">Yaapps</h3>
             <p className="text-muted-foreground mb-6">
               Building digital excellence through innovative solutions and creative design.
             </p>
@@ -35,11 +35,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">hello@techstudio.com</span>
+                <span className="text-muted-foreground">Connect@yaapps.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">+91 9876543210</span>
+                <span className="text-muted-foreground">+91-9639632727</span>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex items-start space-x-3">
               <MapPin className="w-5 h-5 text-primary mt-1" />
               <div className="text-muted-foreground">
-                <p>123 Tech Street,</p>
+                <p>3ª Floor, 28-1383/1, New Balaji Colony,</p>
                 <p>Chittoor, Andhra Pradesh</p>
                 <p>517001, India</p>
               </div>
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground text-sm">
-              © 2024 TechStudio. All rights reserved.
+              © 2025 Yaapps. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <button className="text-muted-foreground hover:text-primary text-sm transition-colors duration-200">

@@ -16,7 +16,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              About TechStudio
+              About Yaapps
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6">
