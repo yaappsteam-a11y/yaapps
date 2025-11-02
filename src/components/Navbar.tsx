@@ -1,7 +1,7 @@
-
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
+import logo from '../../public/logo.jpeg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     { label: 'Contact', href: '#footer' },
   ];
 
-  const scrollToSection = (href: string) => {
+  const scrollToSection = (href) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="container-max">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 animate-fade-in">
-            <h1 className="text-2xl font-bold text-primary">Yaapps</h1>
+            <img src={logo} alt="Yaapps Logo" className="h-10 w-auto" />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -49,7 +49,11 @@ const Navbar = () => {
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-foreground/80 hover:text-primary transition-all duration-200 font-medium hover:scale-105 relative group"
+                  className={`${
+                    isScrolled 
+                      ? 'text-foreground hover:text-primary' 
+                      : 'text-black hover:text-primary'
+                  } transition-all duration-300 font-medium hover:scale-105 relative group`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {item.label}
@@ -64,7 +68,11 @@ const Navbar = () => {
             <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-foreground hover:text-primary transition-colors p-2"
+              className={`${
+                isScrolled 
+                  ? 'text-foreground hover:text-primary' 
+                  : 'text-black hover:text-primary'
+              } transition-all duration-300 p-2`}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -80,7 +88,7 @@ const Navbar = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-3 py-2 text-foreground/80 hover:text-primary hover:bg-accent/50 rounded-md transition-all duration-200"
+                className="block w-full text-left px-3 py-2 text-foreground hover:text-primary hover:bg-accent/50 rounded-md transition-all duration-200"
               >
                 {item.label}
               </button>

@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-primary" />
-                <span className="text-muted-foreground">+91-9639632727</span>
+                <span className="text-muted-foreground">+91-9494407270</span>
               </div>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="flex items-start space-x-3">
               <MapPin className="w-5 h-5 text-primary mt-1" />
               <div className="text-muted-foreground">
-                <p>3ª Floor, 28-1383/1, New Balaji Colony,</p>
+                <p>3a Floor, 28-1383/1, New Balaji Colony,</p>
                 <p>Chittoor, Andhra Pradesh</p>
                 <p>517001, India</p>
               </div>

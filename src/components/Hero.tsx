@@ -13,13 +13,13 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center hero-gradient dark:hero-gradient-dark">
       <div className="container-max">
-        <div className="text-center text-white">
+        <div className="text-center text-black">
           <div className="flex justify-center mb-6 animate-fade-in">
             <div className="flex items-center space-x-1">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400 animate-scale-in" style={{ animationDelay: `${i * 0.1}s` }} />
               ))}
-              <span className="ml-2 text-sm text-white/90">Trusted by 100+ clients</span>
+              <span className="ml-2 text-sm text-black/90">Trusted by 100+ clients</span>
             </div>
           </div>
           
@@ -29,7 +29,7 @@ const Hero = () => {
             <span className="text-yellow-300">Excellence</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/90 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-black/90 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             We create stunning websites, mobile apps, and digital experiences that drive results for your business
           </p>
           
@@ -44,7 +44,7 @@ const Hero = () => {
             
             <button
               onClick={() => document.querySelector('#footer')?.scrollIntoView({ behavior: 'smooth' })}
-              className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-200 hover:scale-105 shadow-lg"
+              className="border-2 border-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-200 hover:scale-105 shadow-lg"
             >
               Get In Touch
             </button>

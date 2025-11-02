@@ -90,11 +90,11 @@
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, #1A73E8 0%, #4285F4 50%, #FF7043 100%);
+    background: linear-gradient(135deg, #f7f7f7 0%, #f9fafc 50%, #090909 100%);
   }
   
   .hero-gradient-dark {
-    background: linear-gradient(135deg, #1A73E8 0%, #2563eb 50%, #FF7043 100%);
+    background: linear-gradient(135deg, #feffff 0%, #ffffff 50%, #131313 100%);
   }
   
   .section-padding {

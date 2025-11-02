@@ -4,10 +4,9 @@ import { Award, Users, Clock, CheckCircle } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Users, number: '100+', label: 'Happy Clients' },
-    { icon: CheckCircle, number: '200+', label: 'Projects Completed' },
-    { icon: Clock, number: '3+', label: 'Years Experience' },
-    { icon: Award, number: '50+', label: 'Awards Won' }
+    { icon: Users, number: '20+', label: 'Happy Clients' },
+    { icon: CheckCircle, number: '50+', label: 'Projects Completed' },
+    { icon: Clock, number: '10+', label: 'Years Experience' },
   ];
 
   return (

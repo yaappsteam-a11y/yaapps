@@ -1,20 +1,39 @@
 
 import React from 'react';
 import { Linkedin, Twitter, Mail } from 'lucide-react';
+import person from '../../public/person.jpeg';
 
 const Team = () => {
   const teamMembers = [
     {
-      name: 'Harish',
-      roles: ['CEO', 'CTO', 'CMO', 'CSO'],
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80',
-      bio: 'Visionary leader with expertise in technology strategy, marketing, and business development.'
+      name: 'Harish Babu',
+      roles: ['CEO', 'CMO'],
+      image: person,
+      bio: 'Strategic visionary leading company growth and brand innovation with a strong focus on marketing excellence and leadership.'
     },
     {
-      name: 'Kumar',
+      name: 'Kumar Swamy Reddy',
       roles: ['COO'],
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80',
-      bio: 'Operations expert focused on streamlining processes and ensuring exceptional project delivery.'
+      image: person,
+      bio: 'Expert in operations and execution, ensuring smooth delivery, resource optimization, and process efficiency across teams.'
+    },
+    {
+      name: 'Dilli Babu',
+      roles: ['CPO', 'CDO'],
+      image: person,
+      bio: 'Driving product innovation and data-led decisions with deep insight into user experience, analytics, and digital strategy.'
+    },
+    {
+      name: 'Bharath Kumar',
+      roles: ['CFO'],
+      image: person,
+      bio: 'Financial strategist managing budgets, investments, and long-term financial planning for sustainable business growth.'
+    },
+    {
+      name: 'Abdul Rasheed',
+      roles: ['CTO'],
+      image: person,
+      bio: 'Technology leader responsible for the company’s tech vision, system architecture, and driving engineering excellence.'
     }
   ];
 
@@ -30,7 +49,7 @@ const Team = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -66,7 +85,7 @@ const Team = () => {
                   {member.bio}
                 </p>
                 
-                <div className="flex space-x-4">
+                {/* <div className="flex space-x-4">
                   <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110">
                     <Linkedin className="w-5 h-5" />
                   </button>
@@ -76,7 +95,7 @@ const Team = () => {
                   <button className="bg-primary/10 text-primary p-2 rounded-full hover:bg-primary hover:text-white transition-all duration-200 hover:scale-110">
                     <Mail className="w-5 h-5" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}
